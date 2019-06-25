@@ -9,7 +9,7 @@ app = Bottle()
 @app.route('/')
 def get_ip():
     client_ip = request.environ.get('REMOTE_ADDR')
-    return json.dumps({"this is a CICD demo : " + "client_ip_address": client_ip})
+    return json.dumps({"this is a CICD demo for UST: " + "client_ip_address": client_ip})
 
 
 if __name__ == "__main__":
